@@ -12,7 +12,7 @@ echo "Generating SDKs"
 additional_properties="generateInterfaces=true,enumClassPrefix=true,structPrefix=true"
 
 ## Various reproducers/tests
-OPENAPI_FILENAME=".openapi/content-type.json"
+OPENAPI_FILENAME=${OPENAPI_FILENAME:-.openapi/content-type.json}
 PACKAGE_NAME="contenttype"
 OUTPUT_PATH="contenttype"
  

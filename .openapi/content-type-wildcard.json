@@ -1,0 +1,40 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "getRoot",
+        "tags": ["test"],
+        "responses": {
+          "200": {
+            "description": "Test data",
+            "content": {
+              "application/vnd.name.*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataObj"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DataObj": {
+        "type": "object",
+        "properties": {
+          "test": {
+            "example": "hello",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
