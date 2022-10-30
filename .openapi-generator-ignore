@@ -1,0 +1,5 @@
+#**/go.mod
+#**/go.sum
+**/git_push.sh
+**/.travis.yml
+**/.openapi-generator-ignore
