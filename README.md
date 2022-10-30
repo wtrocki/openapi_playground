@@ -1,22 +1,30 @@
 # openapi_playground
 
-OpenAPI playground used to reproduce OpenAPI Generator bugs and improvements.
+OpenAPI playground used to reproduce OpenAPI Generator issues and improvements.
+
+## Usage
+
+1. Create new openapi file in .openapi folder
+2. Add new generator to ./scripts/generate.sh
+3. Run `make generate`
+4. Run mock `npx @stoplight/prism-cli mock .openapi/your_file.json
+5. Create and run example using SDK
 
 ## Runniung tests
 
-1. Run mock
+1.Run mock
 
 ```bash
 make mock
 ```
 
-2. In separate window run example
+2.In separate window run example
 
 ```bash
 make example
 ```
 
-## Generating test sdk
+## Generating sdks
 
 ```bash
 make generate
