@@ -1,0 +1,11 @@
+.gitignore
+README.md
+api/openapi.yaml
+api_test_.go
+client.go
+configuration.go
+docs/DataObj.md
+docs/TestApi.md
+model_data_obj.go
+response.go
+utils.go

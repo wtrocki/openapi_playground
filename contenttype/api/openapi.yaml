@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: API
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /:
+    get:
+      operationId: getRoot
+      responses:
+        "200":
+          content:
+            application/vnd.name.v20220101+json:
+              schema:
+                $ref: '#/components/schemas/DataObj'
+          description: Test data
+      tags:
+      - test
+components:
+  schemas:
+    DataObj:
+      properties:
+        test:
+          example: hello
+          type: string
+      type: object
