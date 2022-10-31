@@ -5,10 +5,10 @@ OpenAPI playground used to reproduce OpenAPI Generator issues and improvements.
 ## Usage
 
 1. Create new openapi file in .openapi folder
-2. Add new generator to ./scripts/generate.sh
+2. Add new generator step to ./scripts/generate.sh
 3. Run `make generate`
-4. Run mock `npx @stoplight/prism-cli mock .openapi/your_file.json
-5. Create and run example using SDK
+4. Run mock `npx @stoplight/prism-cli mock .openapi/your_file.json|
+5. Create and run sdk example 
 
 ## Runniung tests
 
